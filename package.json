@@ -9,7 +9,7 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "predeploy": "cd client && npm install && npm run build",
+    "predeploy": "cd client && yarn build",
     "deploy": "gh-pages -d build",
     "start": "node server/index.js",
     "backend": "nodemon server/index.js",
