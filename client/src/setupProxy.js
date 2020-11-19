@@ -1,11 +1,10 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
-const port = process.env.PORT || 5000;
-
+const API_URL = "https://themoviedbapp.herokuapp.com/";
 module.exports = function (app) {
   app.use(
     "/api",
     createProxyMiddleware({
-      target: `http://localhost:${port}`,
+      target: API_URL,
       changeOrigin: true,
     })
   );
