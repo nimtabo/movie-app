@@ -10,7 +10,7 @@
   },
   "scripts": {
     "predeploy": "cd client && yarn build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d client/build",
     "start": "node server/index.js",
     "backend": "nodemon server/index.js",
     "frontend": "npm run start --prefix client",
