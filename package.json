@@ -33,10 +33,7 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
-<<<<<<< HEAD
     "gh-pages": "^3.1.0",
-=======
->>>>>>> f5922b21d80eab77d29156f68de5e96b3a393654
     "nodemon": "^1.19.1"
   }
 }
