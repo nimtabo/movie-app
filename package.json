@@ -9,7 +9,7 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "predeploy": "cd client && yarn build",
+    "heroku-postbuild": "cd client && yarn install && yarn build",
     "deploy": "gh-pages -d client/build",
     "start": "node server/index.js",
     "backend": "nodemon server/index.js",
